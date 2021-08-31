@@ -11,8 +11,17 @@ This repository contains the code to provision infrastructure in AWS using Terra
 ### For recreating the same scenario for yourself. Do the following:
 1. Clone the repository
 2. cd terraform-scenario-1
-3. Update your aws credentials in /.aws/credentials file
-4. Perform the following steps:
+3. Create a folder: /.aws/ in your current directory. add a file naming 'credentials'. Fill in your access and secret key of your aws account.
+
+```
+[default]
+access_key=<your-access-key>
+secret_key=<your-secret-key>
+```
+
+*** Note: Perform the above step only if you have not configured your aws cli with your aws account or else skip step 3.
+
+#### Perform the following steps:
 
 
 ``` terraform init ```
